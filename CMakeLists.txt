@@ -1,10 +1,10 @@
 # Library main CMakeLists, add here dependencies for compilation
 
-add_library(module_name STATIC
-    src/Drv_Template.c
+add_library(Stm32_HwSkyWalker_Module STATIC
+    src/Stm32_HwSkyWalker_Module.c
 )
 
-target_include_directories(module_name
+target_include_directories(Stm32_HwSkyWalker_Module
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
