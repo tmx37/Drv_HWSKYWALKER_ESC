@@ -1,33 +1,16 @@
-# Stm32_Driver_Template
-My own personal stm32 based driver tamplate for development.
+# Stm32_HwSkyWalkerEsc_Module
+Driver module to handle Stm32 <-> Skywalker Esc communication.
 
-## Requirements
-- GCC Compiler + arm-none-eabi packages (https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
-- CMake
-- STM32Cube extension
-- West
-- Extension: Cortex-Debug, STM32
-
+## Module Requirements
+- 4x dedicated timers (20ms period, 50Hz)
+ 
 ## Usage
-1. Generate from CubeMX a device-related CMake project 
-2. Open it with VScode and set up as stm32 project (follow extension directives)
-3. Fork from module template and clone straight to the local STM32 project directory
-4. Add to main CMakeLists.txt 
-    ```C
-        add_subdirectory(module_name) 
-
-        target_link_libraries(${CMAKE_PROJECT_NAME}
-            [...]
-            module_name
-        )
-    ```
+1. Configure module to correct Stm32 Tim instance references
+2. Confiure all macros 
 
 ## Notes
-- Remember to check .gitignore to avoid unwanted code on main repos
-- Remember to check launch.json for correct device target
-- Rememeber to check your arm-none-eabi toolchain is set correctly
+- 
 
 ## TODOs
-- move all of ths to containerized working space to set it up exactly as this
-- automate stm32 configuration and project creation with tasks
-
+- Develop module
+- 
