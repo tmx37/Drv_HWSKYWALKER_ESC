@@ -1,11 +1,12 @@
-# Stm32_Driver_Template
-My own personal stm32 based driver tamplate for development.
+# DrvEsc_HwSkyWalker
+Driver for Hobbywind SkyWalker Esc. 
+The module is configurable with your prefered hardware related callbacks.
 
 ## Requirements
 - GCC Compiler + arm-none-eabi packages (https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
 - CMake
 - STM32Cube extension
-- West
+- Git submodules
 - Extension: Cortex-Debug, STM32
 
 ## Usage
