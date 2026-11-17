@@ -3,7 +3,7 @@ if(DEFINED LIB_PARENT_TARGET) # Use same target
   target_include_directories( ${LIB_PARENT_TARGET} PRIVATE include)
 
   target_sources( ${LIB_PARENT_TARGET} PRIVATE
-      src/Drv_HwSkyWalker_Module.c)
+      src/Drv_HwSkyWalker.c)
 
 else() # Create new target
 
@@ -20,7 +20,7 @@ else() # Create new target
 
   # add the library source files
   add_library(${LIBRARY_NAME} STATIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/Drv_HwSkyWalker_Module.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Drv_HwSkyWalker.c
     # ...
   )
 
